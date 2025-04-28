@@ -56,7 +56,7 @@ danhdoan/
 ./mvnw clean install
 ```
 
-2. Run the application (runs on port 8080):
+2. Run the application (runs on port 8340):
 ```bash
 ./mvnw spring-boot:run
 ```
@@ -64,7 +64,7 @@ danhdoan/
 ## 🔧 Configuration
 
 ### Server Configuration
-- Port: 8080
+- Port: 8340 (configured in application.properties)
 - Context Path: /
 - Development tools enabled
 
@@ -149,7 +149,7 @@ Run specific test:
 
 ## 📚 API Documentation
 
-Access Swagger UI at: `http://localhost:8080/swagger-ui.html`
+Access Swagger UI at: `http://localhost:8340/swagger-ui.html`
 
 ## 📞 Support
 

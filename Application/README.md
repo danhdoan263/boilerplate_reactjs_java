@@ -67,7 +67,7 @@ yarn dev
 ## 🔧 Configuration
 
 ### Development Server
-- Port: 3001
+- Port: 3001 (configured in vite.config.ts)
 - Hot Module Replacement (HMR)
 - Fast Refresh
 - TypeScript strict mode

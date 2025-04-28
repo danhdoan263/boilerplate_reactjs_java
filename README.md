@@ -118,7 +118,7 @@ yarn dev
 cd danhdoan
 ```
 
-2. Build and run (runs on port 8080):
+2. Build and run (runs on port 8340):
 ```bash
 ./mvnw spring-boot:run
 ```
@@ -126,13 +126,13 @@ cd danhdoan
 ## 🔧 Configuration
 
 ### Frontend
-- Development server runs on port 3001
+- Development server runs on port 3001 (configured in vite.config.ts)
 - Configured with TypeScript strict mode
 - ESLint for code quality
 - SCSS for styling
 
 ### Backend
-- Server runs on port 8080
+- Server runs on port 8340 (configured in application.properties)
 - GraphQL endpoint: `/graphql`
 - WebSocket endpoint: `/ws`
 - Swagger UI: `/swagger-ui.html`
@@ -177,22 +177,22 @@ npm run lint
 
 ## 📚 API Documentation
 
-Access Swagger UI at: `http://localhost:8080/swagger-ui.html`
+Access Swagger UI at: `http://localhost:8340/swagger-ui.html`
 
 ## 🔄 Communication
 
 The application supports multiple communication protocols:
 
 1. **REST API** (WebFlux)
-   - Endpoint: `http://localhost:8080/api/*`
+   - Endpoint: `http://localhost:8340/api/*`
    - Methods: GET, POST, PUT, DELETE
 
 2. **GraphQL**
-   - Endpoint: `http://localhost:8080/graphql`
-   - Playground: `http://localhost:8080/graphiql`
+   - Endpoint: `http://localhost:8340/graphql`
+   - Playground: `http://localhost:8340/graphiql`
 
 3. **WebSocket**
-   - Endpoint: `ws://localhost:8080/ws`
+   - Endpoint: `ws://localhost:8340/ws`
    - Real-time bidirectional communication
 
 ## 🚀 Deployment
