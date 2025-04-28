@@ -34,7 +34,9 @@
       "@types/*": ["./src/types/*"],
       "@constants/*": ["./src/constants/*"],
       "@context/*": ["./src/context/*"],
-      "@layouts/*": ["./src/layouts/*"]
+      "@layouts/*": ["./src/layouts/*"],
+      "@routes/*": ["./src/routes/*"],
+      "@api/*": ["./src/api/*"]
     }
   },
   "include": ["src"]
