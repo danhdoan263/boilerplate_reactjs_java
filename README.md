@@ -1,13 +1,20 @@
 # Fullstack Application
 
-A modern fullstack application built with React, TypeScript, and Java Spring Boot, featuring real-time capabilities with WebSocket and GraphQL.
+A modern fullstack application built with React, TypeScript, and Java Spring Boot, featuring real-time capabilities with WebSocket and GraphQL. This application is optimized for medium to large-scale projects with its modular architecture and high-performance build system.
 
 ## 🚀 Tech Stack
 
 ### Frontend (Application/)
 - **Framework**: React 19
 - **Language**: TypeScript 5.7
-- **Build Tool**: Vite 6.3
+- **Build Tool**: Vite 6.3 with SWC
+  - **SWC (Speedy Web Compiler)**:
+    - Rust-based compiler, 20x faster than Babel
+    - Zero-config TypeScript support
+    - Built-in JSX transform
+    - Automatic React Refresh
+    - Tree-shaking optimization
+    - Fast development server startup
 - **Styling**: SCSS
 - **Development Tools**:
   - ESLint 9.22
@@ -27,6 +34,53 @@ A modern fullstack application built with React, TypeScript, and Java Spring Boo
   - Spring Boot Test
   - Reactor Test
   - GraphQL Test
+
+## 🏗️ Application Architecture
+
+### Frontend Architecture
+- **Modular Structure**: 
+  - Feature-based organization
+  - Reusable components
+  - Shared utilities and hooks
+  - Type-safe API integration
+- **Performance Optimizations**:
+  - SWC for fast compilation
+  - Code splitting
+  - Lazy loading
+  - Optimized asset loading
+- **Development Experience**:
+  - Hot Module Replacement (HMR)
+  - Fast refresh
+  - Type checking
+  - Linting
+
+### Backend Architecture
+- **Reactive Stack**:
+  - WebFlux for non-blocking I/O
+  - Reactive streams
+  - Event-driven architecture
+- **API Layer**:
+  - REST endpoints
+  - GraphQL schema
+  - WebSocket handlers
+- **Scalability**:
+  - Stateless design
+  - Horizontal scaling support
+  - Connection pooling
+
+### Project Scale
+This architecture is suitable for:
+- **Medium to Large Applications**:
+  - Enterprise applications
+  - Real-time collaboration tools
+  - Data-intensive dashboards
+  - Multi-user systems
+- **Key Features**:
+  - Scalable frontend and backend
+  - Real-time capabilities
+  - Type safety
+  - High performance
+  - Developer productivity
 
 ## 📋 Prerequisites
 
