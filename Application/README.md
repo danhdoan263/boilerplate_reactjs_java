@@ -1,54 +1,153 @@
-# React + TypeScript + Vite
+# Frontend Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React application built with TypeScript, Vite, and SWC, optimized for performance and developer experience.
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Core Technologies
+- **Framework**: React 19
+- **Language**: TypeScript 5.7
+- **Build Tool**: Vite 6.3
+- **Compiler**: SWC (Speedy Web Compiler)
+- **Styling**: SCSS
 
-## Expanding the ESLint configuration
+### Development Tools
+- **Linting**: ESLint 9.22
+- **Type Checking**: TypeScript
+- **Code Quality**: ESLint plugins
+  - React Hooks
+  - React Refresh
+  - TypeScript ESLint
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🏗️ Project Structure
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```
+Application/
+├── src/
+│   ├── components/     # Reusable UI components
+│   ├── pages/         # Page components
+│   ├── assets/        # Static assets
+│   ├── styles/        # SCSS styles
+│   ├── utils/         # Utility functions
+│   ├── hooks/         # Custom React hooks
+│   ├── services/      # API services
+│   ├── types/         # TypeScript types
+│   ├── constants/     # Constants
+│   ├── context/       # React context
+│   └── layouts/       # Layout components
+├── public/            # Public assets
+├── node_modules/      # Dependencies
+├── package.json       # Dependencies and scripts
+├── vite.config.ts    # Vite configuration
+├── tsconfig.json     # TypeScript configuration
+└── eslint.config.js  # ESLint configuration
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📋 Prerequisites
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Node.js (v18 or higher)
+- npm or yarn
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+## 🛠️ Installation
+
+1. Install dependencies:
+```bash
+npm install
+# or
+yarn install
 ```
+
+2. Start development server (runs on port 3001):
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+## 🔧 Configuration
+
+### Development Server
+- Port: 3001
+- Hot Module Replacement (HMR)
+- Fast Refresh
+- TypeScript strict mode
+
+### Build Configuration
+- Code splitting
+- Tree shaking
+- Asset optimization
+- Source maps
+
+### TypeScript Configuration
+- Strict mode enabled
+- Path aliases configured
+- Type checking in development
+
+## 🧪 Testing
+
+Run linting:
+```bash
+npm run lint
+# or
+yarn lint
+```
+
+## 🚀 Performance Features
+
+### SWC Optimizations
+- 20x faster compilation than Babel
+- Zero-config TypeScript support
+- Built-in JSX transform
+- Automatic React Refresh
+- Tree-shaking optimization
+- Fast development server startup
+
+### Code Splitting
+- Route-based code splitting
+- Component lazy loading
+- Dynamic imports
+
+### Asset Optimization
+- Image optimization
+- CSS minification
+- JavaScript minification
+- Source maps for debugging
+
+## 📦 Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run lint` - Run ESLint
+- `npm run preview` - Preview production build
+
+## 🔄 Development Workflow
+
+1. Create feature branch
+2. Implement changes
+3. Run linting
+4. Test changes
+5. Create pull request
+
+## 📝 Best Practices
+
+### Code Organization
+- Feature-based folder structure
+- Reusable components
+- Custom hooks for logic
+- Type-safe API integration
+
+### Performance
+- Lazy loading
+- Code splitting
+- Memoization
+- Virtualization for lists
+
+### TypeScript
+- Strict type checking
+- Interface definitions
+- Type utilities
+- Generic components
+
+## 📞 Support
+
+For support, please open an issue in the repository.
